@@ -10,8 +10,7 @@ output: html_document
 This web site contains the R Markdown script used to do the data analysis and an HTML file compiled from the R Markdown using knitr.
 
 ### Files
-* [Assignment Report Markdown File](http://srscello.github.io/machlearn/strand-practical-machine-learning-assignment.Rmd)
 * [Assignment Report in HTML Format](http://srscello.github.io/machlearn/strand-practical-machine-learning-assignment.html)
 
-### GitHub Repository View
+### GitHub Repository View to View R Markdown File
 * [View Files on GitHub](https://github.com/srscello/machlearn.git)
