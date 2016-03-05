@@ -11,6 +11,7 @@ This web site contains the R Markdown script used to do the data analysis and an
 
 ### Files
 * [Assignment Report in HTML Format](http://srscello.github.io/machlearn/strand-practical-machine-learning-assignment.html)
+* [R Markdown File for Assignment Report](https://github.com/srscello/machlearn/blob/gh-pages/strand-practical-machine-learning-assignment.Rmd)
 
-### GitHub Repository View to View R Markdown File
+### GitHub Repository View
 * [View Files on GitHub](https://github.com/srscello/machlearn.git)
