@@ -1,11 +1,6 @@
----
-title: "Weight Lifting Exercise Quality Prediction"
-author: "Steven Strand"
-date: "Friday, March 04, 2016"
-output: 
-    html_document:
-        keep_md: true
----
+# Weight Lifting Exercise Quality Prediction
+Steven Strand  
+Friday, March 04, 2016  
 
 As part of a Coursera Class on Practical Machine Learning,
 an analysis of dumbbell exercise data was performed using the caret package in R.
