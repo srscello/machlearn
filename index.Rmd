@@ -1,0 +1,14 @@
+---
+title: "Practical Machine Learning Project Files"
+author: "Steven Strand"
+date: "Saturday, March 05, 2016"
+output: html_document
+---
+
+### Purpose
+
+This web site contains the R Markdown script used to do the data analysis and an HTML file compiled from the R Markdown using knitr.
+
+### Files
+* [strand-practical-machine-learning-assignment.Rmd]()
+* [strand-practical-machine-learning-assignment.html]()
