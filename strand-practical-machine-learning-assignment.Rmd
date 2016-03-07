@@ -155,12 +155,6 @@ Plots and summaries of the training data were used to identify issues such as da
 Some response variables were observed to have dramatically different mean values for different user_name values, especially for some variables associated with the belt measurements. 
 
 
-The following plot shows that the data is distributed fairly evenly over the classe categories and user_names, with the exception of classe A having significantly more data:
-
-```{r warning=FALSE, message=FALSE,error=FALSE}
-qplot(classe,fill=user_name,data=training_sm)
-```
-
 The following plot shows data from the training subset for the two most important variables found in the random forest model.
 The plots give some indication of how a learning model might differentiate and classify the classe variable.
 

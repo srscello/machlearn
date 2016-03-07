@@ -192,15 +192,6 @@ Plots and summaries of the training data were used to identify issues such as da
 Some response variables were observed to have dramatically different mean values for different user_name values, especially for some variables associated with the belt measurements. 
 
 
-The following plot shows that the data is distributed fairly evenly over the classe categories and user_names, with the exception of classe A having significantly more data:
-
-
-```r
-qplot(classe,fill=user_name,data=training_sm)
-```
-
-![](strand-practical-machine-learning-assignment_files/figure-html/unnamed-chunk-4-1.png) 
-
 The following plot shows data from the training subset for the two most important variables found in the random forest model.
 The plots give some indication of how a learning model might differentiate and classify the classe variable.
 
@@ -211,7 +202,7 @@ ggplot() + facet_wrap(~user_name)+
                                               data=df_training)
 ```
 
-![](strand-practical-machine-learning-assignment_files/figure-html/unnamed-chunk-5-1.png) 
+![](strand-practical-machine-learning-assignment_files/figure-html/unnamed-chunk-4-1.png) 
 
 It was instructive to examine histograms of all the data, separated by user_name and classe category. These plots were performed using a "for" loop in R. It was noted in this study that some of the variables were relatively mono-modal, while others were bimodal with modes separated by user_name values.
 
@@ -222,7 +213,7 @@ In the mono-modal case, the following plot shows histograms of the pitch_forearm
 ggplot() + facet_wrap(~classe)+geom_histogram(data=df_training, mapping=aes(x=pitch_forearm, fill=user_name))
 ```
 
-![](strand-practical-machine-learning-assignment_files/figure-html/unnamed-chunk-6-1.png) 
+![](strand-practical-machine-learning-assignment_files/figure-html/unnamed-chunk-5-1.png) 
 
 The following histograms show that the roll_belt data is bimodal and unlike the data for pitch_forearm. In this case, the responses for some users are distinct from others. This bimodal feature should make training a learning model more difficult since the responses and variation by classe are different based on the user_name variable. This data feature suggests that creating individual models for each user might yield better predictions.
 
@@ -231,7 +222,7 @@ The following histograms show that the roll_belt data is bimodal and unlike the 
 ggplot() + facet_wrap(~classe)+geom_histogram(data=df_training, mapping=aes(x=roll_belt, fill=user_name))
 ```
 
-![](strand-practical-machine-learning-assignment_files/figure-html/unnamed-chunk-7-1.png) 
+![](strand-practical-machine-learning-assignment_files/figure-html/unnamed-chunk-6-1.png) 
 
 ## Fitting Models to the Data
 Several models were fit to the data. 
@@ -446,7 +437,7 @@ df_compare <- data.frame(true_value=df_validation$classe,prediction=pred_rf,user
 ggplot() + geom_jitter(mapping=aes(x=true_value,y=prediction,color=user_name),data=df_compare)
 ```
 
-![](strand-practical-machine-learning-assignment_files/figure-html/unnamed-chunk-11-1.png) 
+![](strand-practical-machine-learning-assignment_files/figure-html/unnamed-chunk-10-1.png) 
 
 
 ## Predict Test Classe Behavior
